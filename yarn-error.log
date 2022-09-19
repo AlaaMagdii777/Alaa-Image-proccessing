@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\a.magdy\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add jasmine-supertest
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\a.magdy\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk-17.0.4.1;C:\Users\a.magdy\AppData\Roaming\npm\yarn.ps1;C:\Users\a.magdy\AppData\Roaming\npm\expo.ps1;C:\Users\a.magdy\AppData\Local\Microsoft\WindowsApps;;C:\Users\a.magdy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\a.magdy\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\a.magdy\Documents\Alaa-Image-proccessing\node_modules\sharp\build\Release\sharp-win32-x64.node'
+
+npm manifest: 
+  {
+    "name": "alaamagdy-firstproject",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon server.ts",
+      "build": "tsc",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "init": "eslint . --ext .ts",
+      "init:f": "eslint . --ext .ts --fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@types/express": "^4.17.14",
+      "@types/morgan": "^1.9.3",
+      "@types/sharp": "^0.31.0",
+      "@typescript-eslint/eslint-plugin": "^5.37.0",
+      "@typescript-eslint/parser": "^5.37.0",
+      "eslint": "^8.23.1",
+      "prettier": "^2.7.1",
+      "ts-node": "^10.9.1",
+      "typescript": "^4.8.3"
+    },
+    "dependencies": {
+      "dotenv": "^16.0.2",
+      "esm": "^3.2.25",
+      "express": "^4.18.1",
+      "fs": "^0.0.1-security",
+      "morgan": "^1.10.0",
+      "sharp": "^0.31.0"
+    },
+    "description": ""
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

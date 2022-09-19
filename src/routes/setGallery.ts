@@ -18,9 +18,9 @@ const setImage = async (query: galleryType): Promise<string | null> => {
   const source = path.resolve(fullDir, `${query.title}.jpg`);
   const target = path.resolve(visualDesignGalleryDir, `${query.title}-${height}${width}.jpg`);
 
-  const imageInstance = new GalleryEditor( height,width,source, target);
+  const galleryModel = new GalleryEditor( height,width,source, target);
 
-  const show = await imageInstance.resizeGallery();
+  const show = await galleryModel.resizeGallery();
   if (show) {
     return target;
   }
