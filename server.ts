@@ -5,8 +5,9 @@ import morgan from "morgan";
 import routes from "./src/routes/api/gallery";
 
 const app = express();
-const server: Application = express();
+
 dotenv.config();
+const server: Application = express();
 
 const SERVER_PORT = (process.env.SERVER_PORT as unknown as number) || 8080;
 
@@ -21,13 +22,13 @@ server.get("/", (req: Request, res: Response): void => {
 
 //Error-404-notFound
 
-app.get("*", function(res: Response){
-    res.status(404).send("what??!! not found");
-  });
+// app.get("*", (req: Request, res: Response)=>{
+//     res.status(404).send("what??!! not found");
+//   });
 
 //Error-500-
 
-server.use((err: Error,req: Request,res: Response, ): void => {
+server.use((err: Error,req: Request,res: Response,next: Function  ): void => {
       res.status(500).json({ Errors: err.stack });
     }
   );
