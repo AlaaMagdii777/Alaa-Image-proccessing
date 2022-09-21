@@ -17,12 +17,14 @@ export const getGallery = async (title: string): Promise<string | null> => {
   return await presentGallery(galleryUrl);
 };
 
-export const getVisualDesignGallery = async (query: galleryType): Promise<string | null> => {
+export const getVisualDesignGallery = async (
+  query: galleryType
+): Promise<string | null> => {
   const visualDesignGalleryPath = path.resolve(
     visualDesignGalleryDir,
 
     //visualDesignGalleryDir
-    
+
     `${query.title}-${query.height}${query.width}.jpg`
   );
   return await presentGallery(visualDesignGalleryPath);

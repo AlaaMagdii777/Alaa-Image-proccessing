@@ -7,6 +7,7 @@
     "build": "npx tsc",
     "jasmine": "jasmine",
     "test": "npx tsc && jasmine",
+    "prettify": "prettier --config .prettierrc src --write",
     "init": "eslint . --ext .ts",
     "init:f": "eslint . --ext .ts --fix"
   },

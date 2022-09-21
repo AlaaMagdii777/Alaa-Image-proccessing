@@ -33,13 +33,14 @@ const gallaryHandleApi = async (
             res.sendFile(thumbnail);
           } else {
             res.status(200).json({
-              response:
-                "Gallery not found ?!",
+              response: "Gallery not found ?!",
             });
           }
         }
       } else {
-        res.status(200).json({ response: "Somthing happend height or width is null !" });
+        res
+          .status(200)
+          .json({ response: "Somthing happend height or width is null !" });
       }
     } else {
       const Gallery = await getGallery(req.query.title as string);
@@ -50,7 +51,9 @@ const gallaryHandleApi = async (
       }
     }
   } else {
-    res.status(200).json({ response: "Something happend Gallery title is null ?!" });
+    res
+      .status(200)
+      .json({ response: "Something happend Gallery title is null ?!" });
   }
 };
 
