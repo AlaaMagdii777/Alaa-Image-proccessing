@@ -37,7 +37,7 @@ describe('Img Processing using UnitTest', (): void => {
   });
 
   it('Wrong Target for Gallery', async (): Promise<void> => {
-    const invalidTarget = path.resolve('wrong path','name=fjord&width=500&height=800.jpg');
+    const invalidTarget = path.resolve('wrong path','name=icelandwaterfall&width=500&height=800.jpg');
     galleryObject = new GalleryEditor(500, 800,source,invalidTarget);
     expect(await galleryObject.resizeGallery()).toBe(false);
   });

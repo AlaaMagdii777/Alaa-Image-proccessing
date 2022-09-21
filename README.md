@@ -5,7 +5,7 @@
 <!-- =============================================== -->
 <!-- //resize-example-gallery -->
 # test img processing
-<!-- //http://localhost:3000/api/gallery?title=fjord&height=300&width=700 -->
+<!-- //http://localhost:3000/api/gallery?title=icelandwaterfall&height=300&width=700 -->
 
 <!-- =========jasmine-spec-reporter================= -->
 <!-- //Test -->

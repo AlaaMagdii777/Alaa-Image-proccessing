@@ -45,7 +45,7 @@ describe('Img Processing using UnitTest', () => {
         })).not.toThrowError();
     }));
     it('Wrong Target for Gallery', () => __awaiter(void 0, void 0, void 0, function* () {
-        const invalidTarget = path_1.default.resolve('wrong path', 'name=fjord&width=500&height=800.jpg');
+        const invalidTarget = path_1.default.resolve('wrong path', 'name=icelandwaterfall&width=500&height=800.jpg');
         galleryObject = new GalleryEditor_1.default(500, 800, source, invalidTarget);
         expect(yield galleryObject.resizeGallery()).toBe(false);
     }));

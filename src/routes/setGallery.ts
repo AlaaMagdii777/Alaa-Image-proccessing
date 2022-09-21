@@ -13,7 +13,7 @@ const setImage = async (query: galleryType): Promise<string | null> => {
   const height = parseInt(query.height);
   const width = parseInt(query.width);
 
-// /http://localhost:3000/api/gallery?title=palmtunnel&height=700&width=400
+// /http://localhost:3000/api/gallery?title=icelandwaterfall&height=700&width=400
 
   const source = path.resolve(fullDir, `${query.title}.jpg`);
   const target = path.resolve(visualDesignGalleryDir, `${query.title}-${height}${width}.jpg`);
